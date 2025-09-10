@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import "tailwindcss";
 
 @theme inline {
-  --font-cinzel: 'Cinzel', serif;
+  --font-cinzel: var(--font-cinzel);
+  --font-pirata: var(--font-pirata);
+  --font-schibsted: var(--font-schibsted);
 
   --color-primary: #5d1518;
   --color-secondary: #d04140;
+  --color-off-black: #160a0a;
+  --color-white-transparent: #ffdfdf;
 }
