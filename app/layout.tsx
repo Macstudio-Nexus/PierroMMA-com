@@ -21,6 +21,7 @@ const schibstedGrotesk = Schibsted_Grotesk({
 });
 
 export const metadata: Metadata = {
+  
   title:
     "Pierro MMA - Mixed Martial Arts Training | Staten Island Personal Training",
   description:
