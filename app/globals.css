@@ -4,9 +4,16 @@
   --font-cinzel: var(--font-cinzel);
   --font-pirata: var(--font-pirata);
   --font-schibsted: var(--font-schibsted);
+  --font-playfair: var(--font-playfair);
 
   --color-primary: #5d1518;
   --color-secondary: #d04140;
   --color-off-black: #160a0a;
-  --color-white-transparent: #ffdfdf;
+  --color-white: #fbfaf5;
+}
+
+@layer components {
+  .button {
+    @apply my-4 ;
+  }
 }

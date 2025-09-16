@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Cinzel, Pirata_One, Schibsted_Grotesk } from "next/font/google";
+import {
+  Cinzel,
+  Pirata_One,
+  Schibsted_Grotesk,
+  Playfair_Display,
+} from "next/font/google";
 
 import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -20,8 +26,12 @@ const schibstedGrotesk = Schibsted_Grotesk({
   variable: "--font-schibsted",
 });
 
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+
 export const metadata: Metadata = {
-  
   title:
     "Staten Island Mixed Martial Arts Training | Staten Island Personal Training",
   description:
@@ -59,12 +69,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-no-repeat bg-contain bg-bottom-right bg-white-transparent ${cinzel.variable} ${pirataOne.variable} ${schibstedGrotesk.variable}`}
-      style={{ backgroundImage: "url('/bg2.png')" }}
+      className={`bg-white ${cinzel.variable} ${pirataOne.variable} ${schibstedGrotesk.variable} ${playfairDisplay.variable}`}
     >
       <body>
-        {children}
-        <Footer />
+        <header>
+          <Header />
+        </header>
+        <main>{children}</main>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
