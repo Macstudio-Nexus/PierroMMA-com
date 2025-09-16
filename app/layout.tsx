@@ -23,11 +23,11 @@ const schibstedGrotesk = Schibsted_Grotesk({
 export const metadata: Metadata = {
   
   title:
-    "Pierro MMA - Mixed Martial Arts Training | Staten Island Personal Training",
+    "Staten Island Mixed Martial Arts Training | Staten Island Personal Training",
   description:
-    "Professional MMA, Brazilian Jiu-Jitsu, Kickboxing, Boxing and personal fitness training in NYC. Expert martial arts instruction with coach Johnny Pierro. Call (646) 923-2215.",
+    "Professional MMA, Brazilian Jiu-Jitsu, Kickboxing, Boxing and personal fitness training in Staten Island. Expert martial arts instruction with coach Johnny Pierro. Call (646) 923-2215.",
   keywords:
-    "MMA training Staten Island, Brazilian Jiu-Jitsu, kickboxing classes, boxing training, personal fitness trainer, martial arts instruction",
+    "MMA training Staten Island, Brazilian Jiu-Jitsu, kickboxing classes, boxing training, personal fitness trainer, Staten Island brazilian jiu jitsu mma",
   authors: [{ name: "Pierro MMA" }, { name: "Macstudio Nexus" }],
   creator: "Pierro MMA",
   publisher: "Macstudio Nexus",
