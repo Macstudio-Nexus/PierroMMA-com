@@ -15,13 +15,13 @@ export default function Nav() {
   ];
 
   return (
-    <div className="flex justify-between items-start py-10 gap-6 lg:gap-10 xl:gap-14">
+    <div className="flex justify-between items-start py-10 pr-2 gap-6 lg:gap-10 xl:gap-14">
       {menu.map((item, index) => (
         <Link
           href={item.href}
           key={index}
-          className={`font-pirata text-4xl lg:text-5xl 2xl:text-6xl hover:drop-shadow-[0px_0px_9px_rgba(0,0,0,0.2)] hover:scale-105 transition-all duration-300 cursor-pointer ${
-            pathname === item.href ? "text-black drop-shadow-[0px_0px_9px_rgba(0,0,0,0.3)]" : "text-secondary"
+          className={`font-kaushan text-[2rem] lg:text-[2.5rem] xl:text-5xl 2xl:text-6xl hover:drop-shadow-[1px_1px_0px_rgba(0,0,0,0.2)] cursor-pointer ${
+            pathname === item.href ? "text-black drop-shadow-[2px_2px_0px_rgba(0,0,0,0.2)]" : "text-secondary"
           }`}
         >
           {item.name}

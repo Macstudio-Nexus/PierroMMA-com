@@ -20,7 +20,7 @@ export default function Header() {
           </Link>
         </div>
         <div className="mr-auto">
-          <span className="font-kaushan text-3xl drop-shadow-[2px_3px_0px_rgba(208,65,64,0.3)]">Pierro MMA</span>
+          <span className="font-kaushan text-3xl lg:text-4xl xl:text-5xl drop-shadow-[1px_2px_0px_rgba(208,65,64,0.3)]">Pierro MMA</span>
         </div>
         <div className="md:hidden">
           <MobileMenu />
