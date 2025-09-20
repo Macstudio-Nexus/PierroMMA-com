@@ -1,10 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-cinzel: var(--font-cinzel);
-  --font-pirata: var(--font-pirata);
-  --font-schibsted: var(--font-schibsted);
-  --font-playfair: var(--font-playfair);
+  --font-kaushan: var(--font-kaushan);
+  --font-montserrat: var(--font-montserrat);
 
   --color-primary: #5d1518;
   --color-secondary: #d04140;

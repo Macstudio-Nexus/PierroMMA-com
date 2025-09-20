@@ -1,34 +1,22 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {
-  Cinzel,
-  Pirata_One,
-  Schibsted_Grotesk,
-  Playfair_Display,
+  Montserrat,
+  Kaushan_Script,
 } from "next/font/google";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header/Header";
 
-const cinzel = Cinzel({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-cinzel",
+  variable: "--font-montserrat",
 });
 
-const pirataOne = Pirata_One({
+const kaushanScript = Kaushan_Script({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-pirata",
-});
-
-const schibstedGrotesk = Schibsted_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-schibsted",
-});
-
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-kaushan",
 });
 
 export const metadata: Metadata = {
@@ -69,7 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-white ${cinzel.variable} ${pirataOne.variable} ${schibstedGrotesk.variable} ${playfairDisplay.variable}`}
+      className={`bg-white ${montserrat.variable} ${kaushanScript.variable}`}
     >
       <body>
         <header>

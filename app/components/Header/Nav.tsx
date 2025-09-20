@@ -20,8 +20,8 @@ export default function Nav() {
         <Link
           href={item.href}
           key={index}
-          className={`font-pirata text-4xl lg:text-5xl 2xl:text-6xl hover:scale-110 transition-transform duration-200 cursor-pointer ${
-            pathname === item.href ? "text-primary" : "text-secondary"
+          className={`font-pirata text-4xl lg:text-5xl 2xl:text-6xl hover:drop-shadow-[0px_0px_9px_rgba(0,0,0,0.2)] hover:scale-105 transition-all duration-300 cursor-pointer ${
+            pathname === item.href ? "text-black drop-shadow-[0px_0px_9px_rgba(0,0,0,0.3)]" : "text-secondary"
           }`}
         >
           {item.name}

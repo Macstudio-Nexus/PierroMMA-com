@@ -6,7 +6,7 @@ import Nav from "./Nav"
 
 export default function Header() {
   return (
-    <div className="h-fit border-b-1 border-secondary shadow-lg py-6 px-3 lg:px-6 xl:px-12 2xl:px-24">
+    <div className="h-fit border-b-1 border-secondary shadow-lg py-2 lg:py-4 px-3 lg:px-6 xl:px-12 2xl:px-24">
       <div className="flex items-center justify-between">
         <div>
           <Link href="/">
@@ -20,13 +20,7 @@ export default function Header() {
           </Link>
         </div>
         <div className="mr-auto">
-          <Image
-            src="/words-horizontal.png"
-            alt="Staten Island MMA & BJJ training"
-            width={923}
-            height={163}
-            className="h-9 sm:h-11 lg:h-12 xl:h-13 2xl:h-15 w-auto"
-          />
+          <span className="font-kaushan text-3xl drop-shadow-[2px_3px_0px_rgba(208,65,64,0.3)]">Pierro MMA</span>
         </div>
         <div className="md:hidden">
           <MobileMenu />
