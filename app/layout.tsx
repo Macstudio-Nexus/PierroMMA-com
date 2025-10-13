@@ -21,7 +21,6 @@ const schibstedGrotesk = Schibsted_Grotesk({
 });
 
 export const metadata: Metadata = {
-  
   title:
     "Staten Island Mixed Martial Arts Training | Staten Island Personal Training",
   description:
@@ -38,6 +37,15 @@ export const metadata: Metadata = {
       "Professional MMA, BJJ, Kickboxing & Boxing training. Personal fitness coaching available. Call (646) 923-2215 for expert instruction.",
     type: "website",
     locale: "en_US",
+    url: "https://pierromma.com",
+    images: [
+      {
+        url: "/og-image.png", 
+        width: 1200,
+        height: 630,
+        alt: "Pierro MMA - Mixed Martial Arts Training",
+      },
+    ],
     siteName: "Pierro MMA",
   },
   twitter: {
