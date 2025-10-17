@@ -72,12 +72,86 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "@id": "https://pierromma.com",
+    name: "Pierro MMA",
+    alternateName: "Pierro Mixed Martial Arts",
+    description:
+      "Professional MMA, Brazilian Jiu-Jitsu, Kickboxing, Boxing and personal fitness training in Staten Island with coach Johnny Pierro.",
+    url: "https://pierromma.com",
+    logo: "https://pierromma.com/Logo.png",
+    image: "https://pierromma.com/og-image.png",
+    telephone: "(646) 923-2215",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Staten Island",
+      addressRegion: "NY",
+      addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      addressCountry: "US",
+    },
+    sameAs: [],
+    priceRange: "$$",
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Mixed Martial Arts Training",
+          description: "Professional MMA training and instruction - Staten Island",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Brazilian Jiu-Jitsu",
+          description: "BJJ classes for all skill levels - Staten Island",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Kickboxing Classes",
+          description: "Kickboxing training and classes - Staten Island",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Boxing Training",
+          description: "Professional boxing instruction - Staten Island",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Personal Fitness Training",
+          description: "One-on-one personal training sessions - Staten Island",
+        },
+      },
+    ],
+  };
+
   return (
     <html
       lang="en"
       className={`bg-no-repeat bg-contain bg-bottom-right bg-white-transparent ${cinzel.variable} ${pirataOne.variable} ${schibstedGrotesk.variable}`}
       style={{ backgroundImage: "url('/bg2.png')" }}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         {children}
         <Footer />
