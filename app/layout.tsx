@@ -21,8 +21,7 @@ const schibstedGrotesk = Schibsted_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Staten Island Mixed Martial Arts Training | Staten Island Personal Training",
+  title: "Pierro MMA - Staten Island Martial Arts Training",
   description:
     "Professional MMA, Brazilian Jiu-Jitsu, Kickboxing, Boxing and personal fitness training in Staten Island. Expert martial arts instruction with coach Johnny Pierro. Call (646) 923-2215.",
   keywords:
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
   publisher: "Macstudio Nexus",
   robots: "index, follow",
   openGraph: {
-    title: "Pierro MMA - Mixed Martial Arts Training in Staten Island",
+    title: "Pierro MMA - Staten Island Martial Arts Training",
     description:
       "Professional MMA, BJJ, Kickboxing & Boxing training. Personal fitness coaching available. Call (646) 923-2215 for expert instruction.",
     type: "website",
@@ -40,23 +39,32 @@ export const metadata: Metadata = {
     url: "https://pierromma.com",
     images: [
       {
-        url: "/og-image.png", 
+        url: "https://pierromma.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Pierro MMA - Mixed Martial Arts Training",
+        alt: "Pierro MMA - Staten Island Martial Arts Training",
       },
     ],
     siteName: "Pierro MMA",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pierro MMA - Mixed Martial Arts Training NYC",
+    title: "Pierro MMA - Staten Island Martial Arts Training",
     description:
       "Expert MMA, BJJ, Kickboxing & Boxing instruction. Personal training available.",
+    images: ["https://pierromma.com/og-image.png"],
   },
   icons: {
-    icon: "/Logo.png",
+    icon: [
+      { url: "/Logo.png" },
+      { url: "/Logo.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/Logo.png" },
+      { url: "/Logo.png", sizes: "180x180", type: "image/png" },
+    ],
   },
+  metadataBase: new URL("https://pierromma.com"),
 };
 
 export default function RootLayout({
