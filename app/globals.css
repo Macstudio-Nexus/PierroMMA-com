@@ -2,16 +2,39 @@
 
 @theme inline {
   --font-kaushan: var(--font-kaushan);
-  --font-montserrat: var(--font-montserrat);
+  --font-oswald: var(--font-oswald);
 
-  --color-primary: #5d1518;
-  --color-secondary: #d04140;
+  --color-primary: #d04140;
+  --color-secomdary: #5d1518;
   --color-off-black: #160a0a;
   --color-white: #fbfaf5;
+  --color-dark-main: #2b0b07;
 }
 
+h1 {
+  @apply font-kaushan text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight;
+}
+h2 {
+  @apply font-kaushan text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug;
+}
+h3 {
+  @apply font-kaushan text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-semibold leading-snug;
+}
+h4 {
+  @apply font-oswald text-lg sm:text-xl md:text-2xl xl:text-2xl 2xl:text-3xl font-medium leading-normal;
+}
+p {
+  @apply font-oswald text-base sm:text-lg md:text-xl xl:text-lg 2xl:text-xl leading-relaxed max-w-2xl;
+}
+
+ /* for reusable classes */
 @layer components {
   .button {
-    @apply my-4 ;
+    @apply my-4;
   }
+}
+
+ /* for single purpose */
+@layer utilities {
+
 }

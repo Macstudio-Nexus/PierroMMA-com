@@ -1,23 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Cinzel, Pirata_One, Schibsted_Grotesk } from "next/font/google";
+import { Kaushan_Script, Oswald } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import Footer from "./components/Footer";
 
-const cinzel = Cinzel({
-  subsets: ["latin"],
-  variable: "--font-cinzel",
-});
-
-const pirataOne = Pirata_One({
+const kaushan = Kaushan_Script({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-pirata",
+  variable: "--font-kaushan",
 });
 
-const schibstedGrotesk = Schibsted_Grotesk({
+const oswald = Oswald({
+  weight: ["300", "400", "600"],
   subsets: ["latin"],
-  variable: "--font-schibsted",
+  variable: "--font-oswald",
 });
 
 export const metadata: Metadata = {
@@ -102,7 +99,8 @@ export default function RootLayout({
         itemOffered: {
           "@type": "Service",
           name: "Mixed Martial Arts Training",
-          description: "Professional MMA training and instruction - Staten Island",
+          description:
+            "Professional MMA training and instruction - Staten Island",
         },
       },
       {
@@ -143,7 +141,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-no-repeat bg-contain bg-bottom-right bg-white-transparent ${cinzel.variable} ${pirataOne.variable} ${schibstedGrotesk.variable}`}
+      className={`bg-no-repeat bg-contain bg-bottom-right bg-white-transparent ${kaushan.variable} ${oswald.variable}`}
       style={{ backgroundImage: "url('/bg2.png')" }}
     >
       <head>
@@ -156,6 +154,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""} />
     </html>
   );
 }
