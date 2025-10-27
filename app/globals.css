@@ -3,12 +3,14 @@
 @theme inline {
   --font-kaushan: var(--font-kaushan);
   --font-oswald: var(--font-oswald);
+  --font-pirata: var(--font-pirata);
 
   --color-primary: #d04140;
-  --color-secomdary: #5d1518;
+  --color-secondary: #5d1518;
   --color-off-black: #160a0a;
   --color-white: #fbfaf5;
   --color-dark-main: #2b0b07;
+  --color-dark-gray: #2e282a;
 }
 
 h1 {
@@ -27,14 +29,16 @@ p {
   @apply font-oswald text-base sm:text-lg md:text-xl xl:text-lg 2xl:text-xl leading-relaxed max-w-2xl;
 }
 
- /* for reusable classes */
+/* for reusable classes */
 @layer components {
   .button {
     @apply my-4;
   }
 }
 
- /* for single purpose */
+/* for single purpose */
 @layer utilities {
-
+  .radial-gradient {
+    @apply bg-radial from-secondary from-20% to-off-black;
+  }
 }

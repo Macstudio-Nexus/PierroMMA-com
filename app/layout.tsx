@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Kaushan_Script, Oswald } from "next/font/google";
+import { Kaushan_Script, Oswald, Pirata_One } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 import Footer from "./components/Footer";
@@ -15,6 +15,12 @@ const oswald = Oswald({
   weight: ["300", "400", "600"],
   subsets: ["latin"],
   variable: "--font-oswald",
+});
+
+const pirata = Pirata_One({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-pirata",
 });
 
 export const metadata: Metadata = {
@@ -141,7 +147,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-no-repeat bg-contain bg-bottom-right bg-white-transparent ${kaushan.variable} ${oswald.variable}`}
+      className={`bg-no-repeat bg-contain bg-bottom-right bg-white-transparent ${kaushan.variable} ${oswald.variable} ${pirata.variable}`}
       style={{ backgroundImage: "url('/bg2.png')" }}
     >
       <head>
