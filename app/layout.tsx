@@ -147,8 +147,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-no-repeat bg-contain bg-bottom-right bg-white-transparent ${kaushan.variable} ${oswald.variable} ${pirata.variable}`}
-      style={{ backgroundImage: "url('/bg2.png')" }}
+      className={`bg-off-black px-2 ${kaushan.variable} ${oswald.variable} ${pirata.variable}`}
     >
       <head>
         <script
@@ -156,8 +155,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>
-        {children}
+      <body className="min-h-screen flex flex-col">
+        <main className="flex-grow">
+          {children}
+        </main>
         <Footer />
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""} />
