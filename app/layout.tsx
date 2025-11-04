@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Kaushan_Script, Oswald, Pirata_One } from "next/font/google";
+import { Bangers, Oswald, Pirata_One } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 import Footer from "./components/Footer";
 
-const kaushan = Kaushan_Script({
+const bangers = Bangers({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-kaushan",
+  variable: "--font-bangers",
 });
 
 const oswald = Oswald({
@@ -147,7 +147,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-off-black px-2 ${kaushan.variable} ${oswald.variable} ${pirata.variable}`}
+      className={`bg-off-black px-2 ${bangers.variable} ${oswald.variable} ${pirata.variable}`}
     >
       <head>
         <script
@@ -159,7 +159,7 @@ export default function RootLayout({
         <main className="flex-grow">
           {children}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""} />
     </html>

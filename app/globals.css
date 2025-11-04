@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-kaushan: var(--font-kaushan);
+  --font-bangers: var(--font-bangers);
   --font-oswald: var(--font-oswald);
   --font-pirata: var(--font-pirata);
 
@@ -14,19 +14,19 @@
 }
 
 h1 {
-  @apply font-kaushan text-3xl lg:text-5xl 2xl:text-7xl font-bold leading-normal tracking-wide text-white;
+  @apply font-bangers text-3xl lg:text-5xl 2xl:text-7xl font-bold leading-normal tracking-wide text-white;
 }
 h2 {
-  @apply font-kaushan text-2xl lg:text-4xl 2xl:text-6xl font-semibold leading-snug tracking-wide text-primary;
+  @apply font-bangers text-2xl lg:text-4xl 2xl:text-6xl font-semibold leading-snug tracking-wide text-primary;
 }
 h3 {
-  @apply font-kaushan text-xl lg:text-3xl 2xl:text-5xl font-semibold leading-snug tracking-wide text-white;
+  @apply font-bangers text-xl lg:text-3xl 2xl:text-5xl font-semibold leading-snug tracking-wide text-white;
 }
 h4 {
   @apply font-oswald text-lg lg:text-2xl 2xl:text-4xl font-medium leading-normal text-white;
 }
 p {
-  @apply font-oswald text-base lg:text-lg 2xl:text-xl leading-relaxed max-w-2xl text-white;
+  @apply font-oswald font-light text-base lg:text-lg 2xl:text-xl leading-relaxed max-w-2xl text-white;
 }
 
 /* for reusable classes */
