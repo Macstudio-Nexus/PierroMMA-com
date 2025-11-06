@@ -4,7 +4,7 @@ import { coaches } from "./data/coaches";
 export default function Home() {
   return (
     <>
-      <div className="h-screen grid grid-cols-1 space-y-5">
+      <div className="h-screen grid grid-cols-1 space-y-5 place-items-center">
         {coaches.map((coach) => (
           <CoachesCard key={coach.name} coach={coach} />
         ))}
