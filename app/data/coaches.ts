@@ -15,7 +15,7 @@ export interface coach {
 export const coaches: coach[] = [
   {
     name: "Johnny Pierro",
-    image: { path: "/headshots/JP.png", height: 543, width: 917 },
+    image: { path: "/headshots/JP.png", height: 875, width: 543 },
     title: "Head MMA Coach",
     classes: ["MMA,", "BJJ", "PT"],
     bio: "",
@@ -23,7 +23,7 @@ export const coaches: coach[] = [
   },
   {
     name: "Craig Sampson",
-    image: { path: "/headshots/CS.png", height: 2496, width: 4040 },
+    image: { path: "/headshots/CS.png", height: 4040, width: 2496 },
     title: "Assistant MMA/Wrestling coach",
     classes: ["MMA,", "Wrestling", "PT"],
     logo: "/headshots/CSLogo.png",
@@ -32,7 +32,7 @@ export const coaches: coach[] = [
   },
   {
     name: "Mike Carim",
-    image: { path: "/headshots/MC.png", height: 654, width: 1004 },
+    image: { path: "/headshots/MC.JPG", height: 4897, width: 2713 },
     title: "Assistant MMA & Judo coach",
     classes: ["MMA,", "BJJ"],
     bio: "",
