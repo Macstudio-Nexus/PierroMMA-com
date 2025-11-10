@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="flex flex-col items-start justify-between gap-5 pt-[110px] w-full px-4">
           <div className="flex items-center justify-center gap-4">
             <span className="h-30 bg-primary w-[3px]" />
-            <h1>Staten Island's Premier Mixed Martial Arts Team</h1>
+            <h1>Staten Island&apos;s Premier Mixed Martial Arts Team</h1>
           </div>
           <div>
             <h4 className=" max-w-4xl">

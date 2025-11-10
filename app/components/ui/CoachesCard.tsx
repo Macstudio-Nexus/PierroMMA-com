@@ -4,7 +4,6 @@ import Image from "next/image";
 import { coach } from "@/app/data/coaches";
 import logo from "@/public/logo-white-bg.svg";
 import { useState } from "react";
-import { div } from "framer-motion/client";
 
 export default function CoachesCard({ coach }: { coach: coach }) {
   const [isFlipped, setIsFlipped] = useState(false);
