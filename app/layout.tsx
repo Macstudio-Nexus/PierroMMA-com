@@ -147,7 +147,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-off-black px-2 ${bangers.variable} ${oswald.variable} ${pirata.variable}`}
+      className={`bg-off-black ${bangers.variable} ${oswald.variable} ${pirata.variable}`}
     >
       <head>
         <script

@@ -6,7 +6,7 @@ import Nav from "./DesktopNav"
 
 export default function Header() {
   return (
-    <div className="h-fit py-4 lg:py-4 px-3 lg:px-6 xl:px-12 2xl:px-24">
+    <div className="sticky top-0 h-fit py-4 lg:py-4 px-3 lg:px-6 xl:px-12 2xl:px-24">
       <div className="flex items-center justify-between">
         <div>
           <Link href="/">
@@ -19,10 +19,10 @@ export default function Header() {
             />
           </Link>
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <MobileMenu />
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden lg:flex">
           <Nav />
         </div>
       </div>
