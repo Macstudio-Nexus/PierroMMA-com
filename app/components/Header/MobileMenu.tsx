@@ -5,14 +5,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-
-export const menu = [
-  { name: "Home", href: "#home" },
-  { name: "Classes", href: "#classes" },
-  { name: "Schedule", href: "#schedule" },
-  { name: "About Us", href: "#about" },
-  { name: "Contact", href: "#contact" },
-];
+import { mobileMenu } from "@/app/data/menuData";
 
 export default function MobileMenu() {
   const [isShowing, setIsShowing] = useState(false);
@@ -48,7 +41,7 @@ export default function MobileMenu() {
                 </button>
               </div>
               <div className="flex flex-col items-start gap-3 sm:gap-8 pl-10">
-                {menu.map((item, index) => (
+                {mobileMenu.map((item, index) => (
                   <Link
                     href={item.href}
                     key={index}

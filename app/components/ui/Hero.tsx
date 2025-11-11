@@ -4,10 +4,10 @@ import SecondaryButton from "../buttons/SecondaryButton";
 export default function Hero() {
   return (
     <>
-      <div id="home" className="bg-secondary/25 h-screen -mt-[104px] bg-[url('/hero.svg')] bg-cover bg-center">
-        <div className="flex flex-col items-start justify-between gap-5 pt-[110px] w-full px-4">
+      <div id="home" className="bg-secondary/25 h-screen bg-[url('/hero.svg')] bg-cover xl:bg-right xl:bg-contain bg-no-repeat bg-center">
+        <div className="flex flex-col items-start justify-between gap-5 pt-[110px] w-full px-4 xl:px-40">
           <div className="flex items-center justify-center gap-4">
-            <span className="h-30 bg-primary w-[3px]" />
+            <span className="h-30 xl:h-38 bg-primary w-[3px]" />
             <h1>Staten Island&apos;s Premier Mixed Martial Arts Team</h1>
           </div>
           <div>

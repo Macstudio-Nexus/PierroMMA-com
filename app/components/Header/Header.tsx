@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 import MobileMenu from "./MobileMenu";
-import Nav from "./DesktopNav"
+import Nav from "./DesktopNav";
 
 export default function Header() {
   return (
-    <div className="sticky top-0 h-fit py-4 lg:py-4 px-3 lg:px-6 xl:px-12 2xl:px-24">
-      <div className="flex items-center justify-between">
+    <div className="sticky top-0 h-fit py-4 lg:py-4 px-3 lg:px-6 xl:px-0 xl:py-0">
+      <div className="xl:hidden flex items-center justify-between">
         <div>
           <Link href="/">
             <Image
@@ -19,12 +19,10 @@ export default function Header() {
             />
           </Link>
         </div>
-        <div className="lg:hidden">
-          <MobileMenu />
-        </div>
-        <div className="hidden lg:flex">
-          <Nav />
-        </div>
+        <MobileMenu />
+      </div>
+      <div className="hidden xl:flex">
+        <Nav />
       </div>
     </div>
   );
