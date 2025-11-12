@@ -15,7 +15,7 @@ export default function MobileMenu() {
   };
 
   return (
-    <div>
+    <div className="z-10">
       <AnimatePresence>
         {isShowing && (
           <motion.div
