@@ -7,19 +7,20 @@ export default function Hero() {
     <>
       <div
         id="home"
-        className="relative bg-secondary/25 min-h-95 sm:min-h-120 h-fit overflow-visible pb-6"
+        className="relative bg-secondary/25 pt-[90px] xl:pt-[200px] h-fit overflow-visible pb-6 flex items-center w-full justify-center"
       >
         <Image
           src="/hero.svg"
           alt="Hero background"
           width={351}
           height={406}
-          className="absolute right-0 -top-10 sm:-top-25 h-105 sm:h-135 md:h-145 w-auto "
+          className="absolute right-0 md:right-20 xl:right-40 2xl:right-90 bottom-0 -mb-1 h-100 lg:h-120 2xl:h-150 w-auto "
         />
-        <div className="relative flex flex-col items-start justify-between gap-5 w-full px-4 xl:px-40">
+        <div className="relative flex flex-col items-start justify-between gap-5 w-fit max-w-2xl xl:max-w-5xl 2xl:max-w-7xl py-4 px-4 xl:px-40">
           <div className="flex items-center justify-center gap-4">
-            <span className="h-30 xl:h-38 bg-primary w-[3px]" />
-            <h1>Staten Island&apos;s Premier Mixed Martial Arts Team</h1>
+            <h1 className="border-l-2 md:border-l-3 pl-3 border-primary">
+              Staten Island&apos;s Premier Mixed Martial Arts Program
+            </h1>
           </div>
           <div>
             <h4 className=" max-w-4xl">

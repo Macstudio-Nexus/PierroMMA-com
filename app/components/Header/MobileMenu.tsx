@@ -15,7 +15,7 @@ export default function MobileMenu() {
   };
 
   return (
-    <div className="z-10">
+    <div className="">
       <AnimatePresence>
         {isShowing && (
           <motion.div
@@ -23,7 +23,7 @@ export default function MobileMenu() {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: "100%", opacity: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed top-0 left-0 bg-gradient-to-r from-off-black to-secondary/99 border-r px-4 pt-2 border-gray-400/30 h-full w-7/8 md:w-1/2 shadow-lg flex flex-col justify-between"
+            className="fixed top-0 left-0 bg-gradient-to-r from-off-black to-secondary/99 z-50 border-r px-4 pt-2 border-gray-400/30 h-full w-7/8 md:w-1/2 shadow-lg flex flex-col justify-between"
           >
             <div className="flex flex-col items-start pt-2 gap-10">
               <div className="flex items-center justify-between w-full">

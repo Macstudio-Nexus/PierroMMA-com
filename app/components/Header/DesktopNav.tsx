@@ -90,7 +90,7 @@ export default function Nav() {
             </div>
 
             <div className="flex justify-center">
-              <Link href="#home">
+              <Link href="#">
                 <Image
                   src="/logo-white-bg.svg"
                   alt="Staten Island MMA & BJJ training"
