@@ -9,7 +9,7 @@ export default function CoachesCard({ coach }: { coach: coach }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div className="bg-white border border-white w-[350px] lg:w-[450px] h-fit px-4 pb-4 flex flex-col items-center relative overflow-visible">
+    <div className="bg-white border border-black w-[350px] lg:w-[450px] h-fit px-4 pb-4 flex flex-col items-center relative overflow-visible">
       <div
         className={`relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] cursor-pointer overflow-visible ${
           isFlipped ? "[transform:rotateY(180deg)]" : ""

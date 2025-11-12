@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { PierroImage, ClassesImages } from "@/app/data/images";
-import { div } from "framer-motion/client";
 
 function ClassesImage({
   image,
