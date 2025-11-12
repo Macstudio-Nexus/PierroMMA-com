@@ -20,7 +20,7 @@ h2 {
   @apply font-bangers text-3xl lg:text-4xl 2xl:text-6xl font-semibold leading-snug tracking-wide text-primary;
 }
 h3 {
-  @apply font-bangers text-2xl lg:text-3xl 2xl:text-5xl font-semibold leading-snug tracking-wide text-white;
+  @apply font-bangers text-[28px] lg:text-3xl 2xl:text-5xl font-semibold leading-snug tracking-wider text-white;
 }
 h4 {
   @apply font-oswald text-xl lg:text-2xl 2xl:text-4xl font-medium leading-normal text-white;
@@ -31,8 +31,11 @@ p {
 
 /* for reusable classes */
 @layer components {
-  .button {
-    @apply my-4;
+  .classes-text {
+    @apply bg-secondary border-2 border-black p-3 lg:p-5 flex flex-col lg:gap-6;
+  }
+  .classes-text h3{
+    @apply text-center;
   }
 }
 

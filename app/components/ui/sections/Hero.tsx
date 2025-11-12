@@ -1,5 +1,5 @@
-import PrimaryButton from "../buttons/PrimaryButton";
-import SecondaryButton from "../buttons/SecondaryButton";
+import PrimaryButton from "../../buttons/PrimaryButton";
+import SecondaryButton from "../../buttons/SecondaryButton";
 import Image from "next/image";
 
 export default function Hero() {
