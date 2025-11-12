@@ -157,7 +157,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col">
         <main className="flex-grow">{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""} />
     </html>
