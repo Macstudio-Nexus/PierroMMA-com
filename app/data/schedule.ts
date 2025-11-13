@@ -22,8 +22,8 @@ export const schedule: Schedule[] = [
   },
   {
     day: "Thursday",
-    classname: ["Fight Team (Invite only)", ""],
-    time: ["9:15pm - 11:00pm", ""],
+    classname: ["No Gi BJJ", "Fight Team (Invite only)"],
+    time: ["8:00pm - 9:15pm", "9:15pm - 11:00pm"],
   },
   {
     day: "Friday",
