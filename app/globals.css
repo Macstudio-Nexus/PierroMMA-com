@@ -26,7 +26,7 @@ h4 {
   @apply font-oswald text-xl lg:text-2xl 2xl:text-4xl font-medium leading-normal text-white;
 }
 p {
-  @apply font-oswald font-light text-base lg:text-lg 2xl:text-xl leading-relaxed max-w-2xl text-white;
+  @apply font-oswald text-base lg:text-lg 2xl:text-xl leading-relaxed max-w-2xl text-white;
 }
 
 /* for reusable classes */

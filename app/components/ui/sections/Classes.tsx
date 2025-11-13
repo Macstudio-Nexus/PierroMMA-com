@@ -148,6 +148,10 @@ export default function Classes() {
               performance, our coaches will create a customized plan designed
               just for you.
             </p>
+            <p>
+              We have multiple coaches available for personal training in all 
+              the above martial arts as well as personal fitness.
+            </p>
           </div>
         </div>
       </div>
