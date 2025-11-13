@@ -64,7 +64,7 @@ export default function Classes() {
         </div>
 
         {/* Kickboxing  */}
-        <div className="flex flex-col lg:flex-row items-stretch gap-3">
+        <div className="flex flex-col-reverse lg:flex-row items-stretch gap-3">
           <div className="classes-text lg:w-2/5">
             <h3>Kickboxing/Muay Thai</h3>
             <p>
@@ -110,7 +110,7 @@ export default function Classes() {
         </div>
 
         {/* Wrestling  */}
-        <div className="flex flex-col lg:flex-row items-stretch gap-3">
+        <div className="flex flex-col-reverse lg:flex-row items-stretch gap-3">
           <div className="classes-text lg:w-2/5">
             <h3>Wrestling</h3>
             <p>
