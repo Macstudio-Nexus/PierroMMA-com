@@ -38,6 +38,12 @@ p {
   .classes-text h3{
     @apply text-center;
   }
+  .contact-input {
+    @apply  border-b border-black mx-2 ;
+  }
+  .contact-label {
+    @apply text-primary text-lg ;
+  }
 }
 
 /* for single purpose */
