@@ -31,7 +31,7 @@ export const coaches: coach[] = [
     pt: "Coach Craig is available for personal training in wrestling and BJJ",
   },
   {
-    name: "Mike 'the don' Carim",
+    name: "Mike Carim",
     image: { path: "/headshots/MC.JPG", height: 4897, width: 2713 },
     title: "Assistant MMA & Judo coach",
     classes: ["MMA,", "BJJ"],

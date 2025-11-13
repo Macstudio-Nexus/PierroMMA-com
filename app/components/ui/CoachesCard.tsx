@@ -9,7 +9,7 @@ export default function CoachesCard({ coach }: { coach: coach }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div className="bg-white border border-black w-[350px] lg:w-[450px] h-fit px-4 pb-4 flex flex-col items-center relative overflow-visible">
+    <div className="bg-black border-2 border-primary w-[350px] lg:w-[450px] h-fit px-4 pb-4 flex flex-col items-center relative overflow-visible">
       <div
         className={`relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] cursor-pointer overflow-visible ${
           isFlipped ? "[transform:rotateY(180deg)]" : ""
@@ -18,18 +18,18 @@ export default function CoachesCard({ coach }: { coach: coach }) {
       >
         <div className="[backface-visibility:hidden]">
           <div className="grid grid-cols-[75px_1fr]">
-            <div className="bg-black flex items-center justify-center">
+            <div className="bg-black flex items-center justify-center border-l border-primary">
               <span className="text-[60px] lg:text-[65px] text-white font-bangers upppercase [writing-mode:vertical-rl] rotate-180 tracking-wide">
                 {coach.name}
               </span>
             </div>
-            <div className="flex items-center justify-center overflow-hidden">
+            <div className="flex items-center justify-center overflow-hidden border-r border-primary">
               <Image
                 alt={coach.name}
                 src={coach.image.path}
                 height={coach.image.height}
                 width={coach.image.width}
-                className="object-cover h-full w-full"
+                className="object-cover h-110 lg:h-150 w-full"
               />
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function CoachesCard({ coach }: { coach: coach }) {
         </div>
 
         {/* BACK SIDE */}
-        <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-white flex flex-col items-center justify-center overflow-visible px-5 pt-4">
+        <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-white border-x border-b border-primary flex flex-col items-center justify-center overflow-visible px-5 pt-4">
           <div className="flex items-start justify-end w-full">
             <div className="bg-primary text-off-black font-bold text-xl lg:text-2xl font-oswald pl-10 lg:pl-12 pr-2 pt-1 pb-2 w-52 lg:w-[300px] [clip-path:polygon(38px_0,100%_0,100%_100%,0_100%)]">
               {coach.name}
@@ -63,14 +63,14 @@ export default function CoachesCard({ coach }: { coach: coach }) {
             </div>
           </div>
 
-          <div className="absolute top-[10px] lg:top-[45px] left-2 bg-white rounded-full p-1 border-5 border-primary">
+          <div className="absolute top-[40px] lg:top-[45px] left-2 bg-white rounded-full p-1 border-5 border-primary">
             {coach.logo ? (
               <Image
                 src={coach.logo}
                 alt="Pierro MMA Logo"
                 height={100}
                 width={100}
-                className="size-24 lg:size-25"
+                className="size-23 lg:size-25"
               />
             ) : (
               <Image
@@ -78,7 +78,7 @@ export default function CoachesCard({ coach }: { coach: coach }) {
                 alt="Pierro MMA Logo"
                 height={100}
                 width={100}
-                className="size-24 lg:size-25"
+                className="size-23 lg:size-25"
               />
             )}
           </div>
