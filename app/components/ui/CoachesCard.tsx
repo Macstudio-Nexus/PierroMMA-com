@@ -38,7 +38,11 @@ export default function CoachesCard({ coach }: { coach: coach }) {
               {coach.title}
             </div>
           </div>
-          <div className="absolute bottom-0 -right-2 bg-white rounded-full p-1 border-5 border-primary">
+          <div
+            className={`absolute bottom-0 -right-2 bg-white rounded-full p-1 border-5 border-primary ${
+              isFlipped && "hidden"
+            }`}
+          >
             <Image
               src={logo}
               alt="Pierro MMA Logo"

@@ -7,13 +7,13 @@ import Schedule from "./components/ui/sections/schedule/Schedule";
 
 export default function Home() {
   return (
-    <>
+    <div className="mx-2">
       <Header />
       <Hero />
       <Classes />
       <Schedule />
       <About />
       <Contact />
-    </>
+    </div>
   );
 }

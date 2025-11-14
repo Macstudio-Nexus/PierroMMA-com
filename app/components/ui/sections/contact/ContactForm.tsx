@@ -105,7 +105,7 @@ export default function ContactForm() {
 
         <div className="flex flex-col gap-2 py-2">
           <label htmlFor="checkbox" className="contact-label">
-            I'm interested in
+            I&apos;m interested in
           </label>
           <select
             id="checkbox"
