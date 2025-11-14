@@ -58,10 +58,10 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="w-full flex justify-center my-5 md:my-20">
+    <div className="flex justify-center my-5 md:my-10">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="bg-white w-[375px] max-w-xl lg:max-w-2xl font-oswald px-6 md:px-10 py-8 md:py-12 full-shadow rounded-lg"
+        className="bg-white w-[350px] md:w-[375px] lg:w-[500px] max-w-xl lg:max-w-2xl font-oswald px-6 md:px-10 py-8 md:py-12 full-shadow rounded-lg"
       >
         <div className="flex flex-col gap-1 py-2">
           <label htmlFor="name" className="contact-label">

@@ -43,12 +43,12 @@ export default function Footer() {
             <div className="flex items-center justify-center gap-3">
               <Mail className="size-5" />
               <a
-                href="mailto:jophnnypierro7@gmail.com"
+                href="mailto:info@pierromma.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium"
               >
-                johnnypierro7@gmail.com
+                info@pierromma.com
               </a>
             </div>
             <div className="flex items-center justify-center gap-3">
