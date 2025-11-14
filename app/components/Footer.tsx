@@ -59,7 +59,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                3810 Victory blvd ste G, Staten Island, NY 10314
+                3801 Victory blvd ste G, Staten Island, NY 10314
               </a>
             </div>
             <a

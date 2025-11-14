@@ -5,16 +5,18 @@ export default function ContactInfo() {
   return (
     <div className="flex flex-col items-start justify-center gap-4 p-4 border border-primary rounded-md font-oswald text-white text-lg w-full">
       <div className="flex items-center gap-3">
-        <Mail />
-        <a href="mailto:info@pierromma.com">info@pierromma.com</a>
-      </div>
-      <div className="flex items-center gap-3">
         <Phone />
         <a href="tel:6469232215">+1 646-923-2215</a>
       </div>
       <div className="flex items-center gap-3">
-        <MapPin />
+        <Mail />
         <a href="mailto:info@pierromma.com">info@pierromma.com</a>
+      </div>
+      <div className="flex items-center gap-3">
+        <MapPin />
+        <a href="mailto:info@pierromma.com">
+          3801 Victory blvd ste G, Staten Island, NY 10314
+        </a>
       </div>
       <div className="flex items-center gap-3">
         <a
