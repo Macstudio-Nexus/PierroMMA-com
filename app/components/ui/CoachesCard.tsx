@@ -67,7 +67,7 @@ export default function CoachesCard({ coach }: { coach: coach }) {
             </div>
           </div>
 
-          <div className="absolute top-[40px] lg:top-[45px] left-2 bg-white rounded-full p-1 border-5 border-primary">
+          <div className="absolute top-[40px] lg:top-[70px] left-2 bg-white rounded-full p-1 border-5 border-primary">
             {coach.logo ? (
               <Image
                 src={coach.logo}

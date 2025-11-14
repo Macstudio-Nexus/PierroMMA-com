@@ -3,7 +3,7 @@ import ContactInfo from "./ContactInfo";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start px-4 justify-center gap-4 lg:gap-24">
+    <div id="contact" className="flex flex-col md:flex-row items-center md:items-start px-4 justify-center gap-4 lg:gap-24 scroll-mt-20 xl:scroll-mt-45">
       <div className="flex flex-col items-center max-w-xs lg:max-w-lg gap-3 px-4 md:pt-10">
         <h2 className="!text-primary !text-4xl">ready to train?</h2>
         <p>

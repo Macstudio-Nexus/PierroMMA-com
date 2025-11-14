@@ -37,7 +37,7 @@ export default function Nav() {
     <>
       <div className="flex flex-col w-full overflow-visible">
         <div className="flex justify-between items-center w-full bg-off-black h-fit p-4">
-          <div className="w-[120px]">
+          <div className="w-[120px] z-10">
             <a
               href="https://instagram.com/pierro_mma"
               target="_blank"
@@ -60,7 +60,7 @@ export default function Nav() {
             <p>+1 718 777-7777</p>
             <p>3801 Victory Blvd, suite G, Staten Island, NY 10314</p>
           </div>
-          <div>
+          <div className="z-10">
             <PrimaryButton text="Contact" link="#contact" />
           </div>
         </div>

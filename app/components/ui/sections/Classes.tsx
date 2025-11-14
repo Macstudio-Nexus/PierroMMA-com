@@ -25,7 +25,7 @@ function ClassesImage({
 
 export default function Classes() {
   return (
-    <div className="w-full flex justify-center md:my-20">
+    <div id="classes" className="w-full flex justify-center md:my-20 scroll-mt-20 xl:scroll-mt-45">
       <div className="bg-white max-w-xl lg:max-w-4xl 2xl:max-w-6xl h-fit m-3 p-3 flex flex-col items-center justify-center gap-3">
         <div className="p-2 border-2 border-off-black w-full flex flex-col items-center justify-center gap-2">
           <h2 className="whitespace-nowrap">master multiple disciplines</h2>
