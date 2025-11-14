@@ -18,7 +18,7 @@ export default function Hero() {
         />
         <div className="relative flex flex-col items-start justify-between gap-5 w-fit max-w-2xl xl:max-w-5xl 2xl:max-w-7xl py-4 px-4 xl:px-40">
           <div className="flex items-center justify-center gap-4">
-            <h1 className="border-l-2 md:border-l-3 pl-3 border-primary">
+            <h1 className="border-l-2 md:border-l-3 pl-5 border-primary">
               Staten Island&apos;s Premier Mixed Martial Arts Program
             </h1>
           </div>
