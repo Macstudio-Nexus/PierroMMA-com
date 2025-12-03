@@ -154,7 +154,7 @@ export default function ContactForm() {
         </div>
 
         <button
-          className="bg-primary font-oswald text-xl px-8 py-2 w-full rounded-md text-white hover:bg-secondary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="bg-primary font-oswald text-xl px-8 py-2 w-full rounded-md text-white cursor-pointer hover:scale-105 duration-300 ease-in-out transition disabled:opacity-50 disabled:cursor-not-allowed"
           type="submit"
           disabled={isSubmitting}
         >

@@ -6,16 +6,16 @@ import Nav from "./DesktopNav";
 
 export default function Header() {
   return (
-    <div className="fixed w-full top-0 h-[90px] z-50 py-4 lg:py-4 px-3 lg:px-6 xl:px-0 xl:py-0">
+    <div className="z-100 w-full h-[90px] py-4 lg:py-4 px-3 lg:px-6 xl:px-0 xl:py-0 bg-secondary/25">
       <div className="xl:hidden flex items-center justify-between">
         <div>
           <Link href="#">
             <Image
-              src="/logo-white-bg.svg"
+              src="/logo-white-bg.webp"
               alt="Staten Island MMA & BJJ training"
-              width={550}
-              height={770}
-              className="h-18 w-auto"
+              width={279}
+              height={397}
+              className="h-20 w-auto"
             />
           </Link>
         </div>

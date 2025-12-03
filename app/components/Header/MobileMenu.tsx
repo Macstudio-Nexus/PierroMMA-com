@@ -29,11 +29,11 @@ export default function MobileMenu() {
               <div className="flex items-center justify-between w-full">
                 <Link href="#home" onClick={() => setIsShowing(false)}>
                   <Image
-                    src="/logo-white-bg.svg"
+                    src="/logo-white-bg.webp"
                     alt="Staten Island MMA & BJJ training"
-                    width={550}
-                    height={770}
-                    className="h-18 w-auto"
+                    width={279}
+                    height={397}
+                    className="h-20 w-auto"
                   />
                 </Link>
                 <button onClick={onClick} className="">

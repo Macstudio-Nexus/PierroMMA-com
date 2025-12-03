@@ -3,23 +3,18 @@ import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
-  const apiKey = process.env.MAPS_API_KEY;
-  const address = "3801 Victory Blvd Suite G, Staten Island, NY 10314";
-  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${encodeURIComponent(
-    address
-  )}`;
 
   return (
     <div className="bg-secondary/30 text-white text-center font-oswald flex flex-col items-center justify-center gap-1 px-2">
       <div className="flex flex-col md:flex-row items-center lg:justify-around w-full md:px-6 lg:px-30 py-20">
         <div className="flex flex-col items-center md:items-start w-full gap-2 pb-10">
           <div className="flex justify-center">
-            <Link href="#">
+            <Link href="/">
               <Image
-                src="/logo-white-bg.svg"
+                src="/logo-white-bg.webp"
                 alt="Staten Island MMA & BJJ training"
-                width={550}
-                height={770}
+                width={279}
+                height={397}
                 className="h-40 lg:h-50 w-auto"
               />
             </Link>
@@ -28,7 +23,7 @@ export default function Footer() {
             <span className="font-bangers text-5xl tracking-wide">
               pierro mma
             </span>
-            <p>Staten Island&apos;s premier mixed martial arts team</p>
+            <p>Staten Island&apos;s premier mixed martial arts program</p>
             <div className="flex items-center justify-center gap-3">
               <Phone className="size-5" />
               <a
@@ -66,27 +61,25 @@ export default function Footer() {
               href="https://instagram.com/pierro_mma"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center"
+              className="flex items-center gap-2"
             >
               <Image
                 src="/instagram.png"
                 alt="Staten Island MMA & BJJ Training"
                 width={96}
                 height={96}
-                className="size-6 lg:size-8 hover:scale-105 transition-all duration-300"
-              />
+                className="size-6 hover:scale-105 transition-all duration-300"
+              />{" "}
+              @pierro_mma
             </a>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:max-w-4xl h-full">
+        <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px]">
           <iframe
-            title="Pierro MMA Location"
-            width="100%"
-            height="400"
-            className="rounded-md"
-            loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.476086242345!2d-74.1828036!3d40.5973185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24d77f05f374f%3A0x5994e066c6144d0e!2sPierro%20MMA!5e0!3m2!1sen!2sus!4v1764702125014!5m2!1sen!2sus"
             allowFullScreen
-            src={mapUrl}
+            className="absolute top-0 left-0 w-full h-full border-0"
+            loading="lazy"
           />
         </div>
       </div>

@@ -7,18 +7,18 @@ export interface Schedule {
 export const schedule: Schedule[] = [
   {
     day: "Monday",
-    classname: ["Fight Team (Invite only)", ""],
-    time: ["9:15pm - 11:00pm", ""],
+    classname: ["Gi BJJ", "Fight Team (Invite only)"],
+    time: ["7:00pm - 8:00pm", "9:15pm - 11:00pm"],
   },
   {
     day: "Tuesday",
-    classname: ["Fight Team (Invite only)", ""],
-    time: ["9:15pm - 11:00pm", ""],
+    classname: ["No Gi BJJ", "Fight Team (Invite only)"],
+    time: ["7:00pm - 8:00pm", "9:15pm - 11:00pm"],
   },
   {
     day: "Wednesday",
-    classname: ["Fight Team (Invite only)", ""],
-    time: ["9:15pm - 11:00pm", ""],
+    classname: ["Gi BJJ", "No Gi BJJ", "Fight Team (Invite only)"],
+    time: ["7:00pm - 8:00pm", "8:00pm - 9:15pm", "9:15pm - 11:00pm"],
   },
   {
     day: "Thursday",
@@ -27,17 +27,12 @@ export const schedule: Schedule[] = [
   },
   {
     day: "Friday",
-    classname: ["Mixed Martial Arts", ""],
-    time: ["6:30pm - 8:00pm", ""],
-  },
-  {
-    day: "Saturday",
-    classname: ["", ""],
-    time: ["", ""],
+    classname: ["No Gi BJJ", "Mixed Martial Arts"],
+    time: ["5:00pm - 6:30pm", "6:30pm - 8:00pm"],
   },
   {
     day: "Sunday",
-    classname: ["Wrestling", ""],
-    time: ["2:00pm - 3:30pm", ""],
+    classname: ["Gi BJJ", "Wrestling"],
+    time: ["9:00am - 10:00am", "2:00pm - 3:30pm"],
   },
 ];

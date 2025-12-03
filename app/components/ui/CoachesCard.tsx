@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { coach } from "@/app/data/coaches";
-import logo from "@/public/logo-white-bg.svg";
+import logo from "@/public/logo-white-bg.webp";
 import { useState } from "react";
 
 export default function CoachesCard({ coach }: { coach: coach }) {
@@ -46,9 +46,9 @@ export default function CoachesCard({ coach }: { coach: coach }) {
             <Image
               src={logo}
               alt="Pierro MMA Logo"
-              height={100}
-              width={100}
-              className="size-27"
+              height={279}
+              width={397}
+              className="size-27 object-contain"
             />
           </div>
         </div>
@@ -63,18 +63,18 @@ export default function CoachesCard({ coach }: { coach: coach }) {
           <div className="relative bg-black -mt-1 w-full text-white font-oswald h-[360px] lg:h-[450px] overflow-visible [clip-path:polygon(75px_0,100%_0,100%_calc(100%-50px),calc(100%-50px)_100%,0_100%,0_75px)]">
             <div className="w-[250px] lg:w-[350px] text-sm lg:text-[17px] ml-3 lg:ml-4 pt-18 lg:pt-20">
               <div>{coach.bio}</div>
-              <div className="pt-3">{coach.pt}</div>
+              {/* <div className="pt-3 ">{coach.pt}</div> */}
             </div>
           </div>
 
           <div className="absolute top-[40px] lg:top-[70px] left-2 bg-white rounded-full p-1 border-5 border-primary">
             {coach.logo ? (
               <Image
-                src={coach.logo}
+                src={coach.logo.path}
                 alt="Pierro MMA Logo"
-                height={100}
-                width={100}
-                className="size-23 lg:size-25"
+                height={coach.logo.height}
+                width={coach.logo.width}
+                className="w-23 h-23 lg:w-25 lg:h-25 object-contain"
               />
             ) : (
               <Image
@@ -82,7 +82,7 @@ export default function CoachesCard({ coach }: { coach: coach }) {
                 alt="Pierro MMA Logo"
                 height={100}
                 width={100}
-                className="size-23 lg:size-25"
+                className="size-23 lg:size-25 object-contain"
               />
             )}
           </div>

@@ -21,8 +21,8 @@ export default function Nav() {
         });
       },
       {
-        threshold: 0.3,
-        rootMargin: "-100px 0px -50% 0px",
+        threshold: 0.1,
+        rootMargin: "0px 0px -200px 0px",
       }
     );
 
@@ -35,9 +35,9 @@ export default function Nav() {
 
   return (
     <>
-      <div className="flex flex-col w-full overflow-visible">
+      <div className="flex flex-col w-full overflow-visible z-30">
         <div className="flex justify-between items-center w-full bg-off-black h-fit p-4">
-          <div className="w-[120px] z-10">
+          <div className="w-[120px]">
             <a
               href="https://instagram.com/pierro_mma"
               target="_blank"
@@ -57,7 +57,7 @@ export default function Nav() {
             <span className="text-5xl text-white font-bangers">pierro mma</span>
           </div>
           <div className="flex flex-col items-start pl-4">
-            <p>+1 718 777-7777</p>
+            <p>+1 646-923-2215</p>
             <p>3801 Victory Blvd, suite G, Staten Island, NY 10314</p>
           </div>
           <div className="z-10">
@@ -90,13 +90,13 @@ export default function Nav() {
             </div>
 
             <div className="flex justify-center">
-              <Link href="#">
+              <Link href="/">
                 <Image
-                  src="/logo-white-bg.svg"
+                  src="/logo-white-bg.webp"
                   alt="Staten Island MMA & BJJ training"
-                  width={550}
-                  height={770}
-                  className="h-36 w-auto"
+                  width={279}
+                  height={397}
+                  className="h-48 w-auto"
                 />
               </Link>
             </div>

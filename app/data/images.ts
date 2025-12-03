@@ -7,10 +7,10 @@ export interface PierroImage {
 
 export const ClassesImages: PierroImage[]  =[
     {
-        image: "/mma-staten-island.svg",
+        image: "/mma-staten-island.webp",
         alt: "mma staten island",
-        height: 0,
-        width: 0,
+        height: 497,
+        width: 548,
     },
 
     {
@@ -21,17 +21,17 @@ export const ClassesImages: PierroImage[]  =[
     },
 
     {
-        image: "/brazilian-jiu-jitsu-staten-island.svg",
+        image: "/brazilian-jiu-jitsu-staten-island.webp",
         alt: "brazilian jiu jitsu staten island",
-        height: 0,
-        width: 0,
+        height: 701,
+        width: 536,
     },
 
     {
-        image: "/wrestling-staten-island.svg",
+        image: "/wrestling-staten-island.webp",
         alt: "wrestling staten island",
-        height: 0,
-        width: 0,
+        height: 719,
+        width: 559,
     },
 
     {
