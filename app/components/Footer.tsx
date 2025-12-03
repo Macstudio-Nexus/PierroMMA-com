@@ -30,7 +30,7 @@ export default function Footer() {
                 href="tel:+16469232215"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium"
+                className=""
               >
                 +1 646-923-2215
               </a>
@@ -41,7 +41,7 @@ export default function Footer() {
                 href="mailto:info@pierromma.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium"
+                className=""
               >
                 info@pierromma.com
               </a>
@@ -50,7 +50,7 @@ export default function Footer() {
               <MapPin className="size-5" />
               <a
                 href="https://www.google.com/maps/dir//Pierro+MMA,+3801+Victory+Blvd+Suite+G,+Staten+Island,+NY+10314/@40.5633014,-74.2322601,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c24d77f05f374f:0x5994e066c6144d0e!2m2!1d-74.1828036!2d40.5973185!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MTExMC4wIKXMDSoASAFQAw%3D%3D"
-                className="font-medium"
+                className=""
                 target="_blank"
                 rel="noopener noreferrer"
               >

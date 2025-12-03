@@ -44,7 +44,7 @@ export const coaches: coach[] = [
   },
   {
     name: "Vin Pagnotta",
-    image: { path: "/headshots/VP.webp", height: 3024, width: 4032 },
+    image: { path: "/headshots/VP.webp", height: 4032, width: 3024 },
     title: "Assistant MMA coach",
     classes: ["MMA,", "PT"],
     bio: "Coach Vin began his martial arts journey in Goju Ryu Karate and Japanese Jujutsu, earning his 4th-degree black belt after 18 years of dedication. In high school, he competed on the wrestling team for four years and finished as the PSAL City Finals runner-up at 182 lbs his senior year. During college, he started training Brazilian Jiu-Jitsu and is currently a blue belt. Today, Coach Vin is a competitive amateur MMA fighter with a 4–1 record and is the reigning bantamweight champion for Jackhammer Promotions.",
@@ -52,10 +52,10 @@ export const coaches: coach[] = [
   },
   {
     name: "Nick Volpe",
-    image: { path: "/headshots/NV.webp", height: 2316, width: 3088 },
+    image: { path: "/headshots/NV.webp", height: 1206, width: 797 },
     title: "Brazilian Jiu Jitsu Coach",
     classes: ["BJJ"],
-    logo: { path: "/headshots/NVLogo.webp", height: 4608, width: 2304 },
+    logo: { path: "/headshots/NVLogo.webp", height: 2304, width: 4608 },
     bio: "Coach Nick is a first degree Brazilian Jiu Jitsu black belt under Marcio Bittencourt with experience in mma, Muay Thai, judo, and wrestling. Beginning his training in 2012, Coach Nick now runs the Dark Bear BJJ program at Dento Teki Na. He is also the grappling coach for the NYC Armored Combat Team and an armored combat fighter. After competitive success in BJJ, Olympic style fencing, and armored combat, his attention is focused on effective coaching methods to drive development of the next generation of grapplers and fighters.",
     pt: "",
   },
