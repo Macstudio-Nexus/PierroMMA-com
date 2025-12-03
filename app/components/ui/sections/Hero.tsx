@@ -13,6 +13,7 @@ export default function Hero() {
         alt="Hero background"
         width={351}
         height={406}
+        priority
         className="absolute right-0 md:right-20 xl:right-40 2xl:right-90 bottom-0 -mb-1 h-100 lg:h-120 2xl:h-150 w-auto "
       />
       <div className="relative flex flex-col items-start justify-between gap-5 w-fit max-w-2xl xl:max-w-5xl 2xl:max-w-7xl py-4 px-4 xl:px-40">
