@@ -1,12 +1,60 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-cinzel: var(--font-cinzel);
+  --font-bangers: var(--font-bangers);
+  --font-oswald: var(--font-oswald);
   --font-pirata: var(--font-pirata);
-  --font-schibsted: var(--font-schibsted);
 
-  --color-primary: #5d1518;
-  --color-secondary: #d04140;
-  --color-off-black: #160a0a;
-  --color-white-transparent: #ffdfdf;
+  --color-primary: #d04140;
+  --color-red-white: #000000;
+  --color-secondary: #5d1518;
+  --color-off-black: #140909;
+  --color-white: #fbfaf5;
+  --color-dark-main: #2b0b07;
+  --color-dark-gray: #2e282a;
+}
+
+@custom-variant hover (&:hover);
+
+
+h1 {
+  @apply font-bangers text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold leading-normal tracking-wide text-white;
+}
+h2 {
+  @apply font-bangers text-3xl lg:text-4xl 2xl:text-6xl font-semibold leading-snug tracking-wide text-primary;
+}
+h3 {
+  @apply font-bangers text-[28px] lg:text-3xl 2xl:text-5xl font-semibold leading-snug tracking-wider text-white;
+}
+h4 {
+  @apply font-oswald text-xl lg:text-2xl 2xl:text-4xl font-medium leading-normal text-white;
+}
+p {
+  @apply font-oswald text-base lg:text-lg 2xl:text-xl leading-relaxed max-w-2xl text-white;
+}
+
+/* for reusable classes */
+@layer components {
+  .classes-text {
+    @apply bg-secondary border-2 border-black p-3 lg:p-5 flex flex-col lg:gap-6;
+  }
+  .classes-text h3{
+    @apply text-center;
+  }
+  .contact-input {
+    @apply  border-b border-black mx-2 ;
+  }
+  .contact-label {
+    @apply text-primary text-lg ;
+  }
+}
+
+/* for single purpose */
+@layer utilities {
+  .radial-gradient {
+    @apply bg-radial from-secondary from-20% to-off-black;
+  }
+  .full-shadow {
+    @apply shadow-[0_0_6px_rgba(208,65,64,0.3)];
+  }
 }

@@ -1,23 +1,26 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Cinzel, Pirata_One, Schibsted_Grotesk } from "next/font/google";
+import { Bangers, Oswald, Pirata_One } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import Footer from "./components/Footer";
 
-const cinzel = Cinzel({
+const bangers = Bangers({
+  weight: "400",
   subsets: ["latin"],
-  variable: "--font-cinzel",
+  variable: "--font-bangers",
 });
 
-const pirataOne = Pirata_One({
+const oswald = Oswald({
+  weight: ["300", "400", "500", "600"],
+  subsets: ["latin"],
+  variable: "--font-oswald",
+});
+
+const pirata = Pirata_One({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-pirata",
-});
-
-const schibstedGrotesk = Schibsted_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-schibsted",
 });
 
 export const metadata: Metadata = {
@@ -102,7 +105,8 @@ export default function RootLayout({
         itemOffered: {
           "@type": "Service",
           name: "Mixed Martial Arts Training",
-          description: "Professional MMA training and instruction - Staten Island",
+          description:
+            "Professional MMA training and instruction - Staten Island",
         },
       },
       {
@@ -143,8 +147,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-no-repeat bg-contain bg-bottom-right bg-white-transparent ${cinzel.variable} ${pirataOne.variable} ${schibstedGrotesk.variable}`}
-      style={{ backgroundImage: "url('/bg2.png')" }}
+      className={`bg-off-black ${bangers.variable} ${oswald.variable} ${pirata.variable}`}
     >
       <head>
         <script
@@ -152,10 +155,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>
-        {children}
+      <body className="min-h-screen flex flex-col">
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""} />
     </html>
   );
 }
