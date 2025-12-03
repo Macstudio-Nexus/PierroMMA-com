@@ -24,7 +24,7 @@ const pirata = Pirata_One({
 });
 
 export const metadata: Metadata = {
-  title: "Pierro MMA - BJJ Staten Island - MMA Staten Island ",
+  title: "Pierro MMA - Staten Island MMA, BJJ & Kickboxing",
   description:
     "Professional MMA, Brazilian Jiu-Jitsu, Kickboxing, Boxing and personal fitness training in Staten Island. Expert martial arts instruction with coach Johnny Pierro. Call (646) 923-2215.",
   keywords:
