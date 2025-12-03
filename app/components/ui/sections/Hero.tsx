@@ -14,6 +14,7 @@ export default function Hero() {
         width={351}
         height={406}
         priority
+        fetchPriority="high"
         className="absolute right-0 md:right-20 xl:right-40 2xl:right-90 bottom-0 -mb-1 h-100 lg:h-120 2xl:h-150 w-auto "
       />
       <div className="relative flex flex-col items-start justify-between gap-5 w-fit max-w-2xl xl:max-w-5xl 2xl:max-w-7xl py-4 px-4 xl:px-40">
@@ -23,10 +24,11 @@ export default function Hero() {
           </h1>
         </div>
         <div>
-          <h4 className=" max-w-4xl">
+          <h2 className="!font-oswald !text-xl lg:!text-2xl 2xl:!text-4xl !font-medium !leading-normal !text-white max-w-4xl">
             World class coaching combined with state-of-the-art facilities
-            provide the perfect environment to master MMA, BJJ, and more in Staten Island.
-          </h4>
+            provide the perfect environment to master MMA, BJJ, and more in
+            Staten Island.
+          </h2>
         </div>
         <div className="flex items-start justify-center gap-6 pt-4">
           <PrimaryButton text="Learn More" link="#schedule" />

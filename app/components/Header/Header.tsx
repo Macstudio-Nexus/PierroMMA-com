@@ -15,6 +15,8 @@ export default function Header() {
               alt="Staten Island MMA & BJJ training"
               width={279}
               height={397}
+              priority
+              fetchPriority="high"
               className="h-20 w-auto"
             />
           </Link>

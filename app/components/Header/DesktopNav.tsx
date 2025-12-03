@@ -96,6 +96,8 @@ export default function Nav() {
                   alt="Staten Island MMA & BJJ training"
                   width={279}
                   height={397}
+                  priority
+                  fetchPriority="high"
                   className="h-48 w-auto"
                 />
               </Link>

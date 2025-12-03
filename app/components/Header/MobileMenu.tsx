@@ -76,6 +76,7 @@ export default function MobileMenu() {
       {!isShowing && (
         <button
           onClick={onClick}
+          title="Open Menu"
           className="hover:scale-110 transition-transform duration-200 cursor-pointer"
         >
           <Menu className="size-12 text-gray-400/70" />
