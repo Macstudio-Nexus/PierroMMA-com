@@ -58,3 +58,9 @@ p {
     @apply shadow-[0_0_6px_rgba(208,65,64,0.3)];
   }
 }
+
+/* Performance-optimized animations */
+@keyframes fadeInOut {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

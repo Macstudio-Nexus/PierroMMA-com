@@ -9,8 +9,8 @@ export default function Hero() {
       className=" relative bg-secondary/25 pt-[20px] xl:pt-[150px] h-fit overflow-visible pb-6 flex items-center w-full justify-center"
     >
       <Image
-        src="/hero.svg"
-        alt="Hero background"
+        src="/bjj-staten-island.svg"
+        alt="staten island mma, staten island bjj"
         width={351}
         height={406}
         priority
@@ -25,8 +25,7 @@ export default function Hero() {
         <div>
           <h4 className=" max-w-4xl">
             World class coaching combined with state-of-the-art facilities
-            provide the perfect environment to master MMA, BJJ, Kickboxing and
-            more.
+            provide the perfect environment to master MMA, BJJ, and more in Staten Island.
           </h4>
         </div>
         <div className="flex items-start justify-center gap-6 pt-4">

@@ -17,7 +17,7 @@ function ClassesImage({
         alt={alt}
         height={height}
         width={width}
-        className="w-full h-auto -mb-1"
+        className="w-full h-full object-cover -mb-1"
       />
     </div>
   );
@@ -52,13 +52,15 @@ export default function Classes() {
           <div className="classes-text lg:w-2/5">
             <h3>mixed martial arts</h3>
             <p className="">
-              Our MMA program combines the best techniques from striking,
-              grappling, and conditioning to create complete, well-rounded
-              fighters. Whether you&apos;re training for competition or simply
-              looking to challenge yourself, our classes focus on real-world
-              application, discipline, and improvement in every session. Learn
-              from experienced coaches and train alongside motivated athletes in
-              a supportive, high-energy environment.
+              Our Staten Island MMA program combines striking, grappling, and
+              conditioning to create complete fighters. Join a high-energy training community
+              where discipline meets performance.
+              Learn to seamlessly transition between ranges—from long-range
+              striking to clinch work to ground control. Our comprehensive
+              approach covers stand-up fighting, takedowns, takedown defense, and
+              submission techniques, giving you the versatility needed in modern
+              combat sports. All skill levels welcome, from absolute beginners to
+              active competitors.
             </p>
           </div>
         </div>
@@ -68,13 +70,12 @@ export default function Classes() {
           <div className="classes-text lg:w-2/5">
             <h3>Kickboxing/Muay Thai</h3>
             <p>
-              Brazilian Jiu-Jitsu is a ground-based martial art focused on
-              leverage, technique, and control rather than strength. Our BJJ
-              classes teach effective takedowns, submissions, and positional
-              strategy to help you gain confidence and mastery on the mat.
-              Whether you&apos;re training for competition, self-defense, or
-              overall fitness, our experienced coaches will guide you every step
-              of the way in a safe, supportive environment.
+              Master the art of eight limbs with our kickboxing and Muay Thai
+              program. Develop devastating striking combinations using punches,
+              kicks, elbows, and knees while building explosive power and cardio
+              conditioning. Perfect for fitness enthusiasts and competitive
+              fighters alike, our Staten Island kickboxing classes deliver
+              results through proven technique and intense training.
             </p>
           </div>
           <ClassesImage
@@ -98,13 +99,12 @@ export default function Classes() {
           <div className="classes-text lg:w-2/5">
             <h3>Brazilian Jiu Jitsu</h3>
             <p>
-              Brazilian Jiu-Jitsu is a ground-based martial art focused on
-              leverage, technique, and control rather than strength. Our BJJ
-              classes teach effective takedowns, submissions, and positional
-              strategy to help you gain confidence and mastery on the mat.
-              Whether you&apos;re training for competition, self-defense, or
-              overall fitness, our experienced coaches will guide you every step
-              of the way in a safe, supportive environment.
+              Learn the gentle art at Staten Island&apos;s premier BJJ program.
+              This ground-based martial art emphasizes leverage and technique over
+              raw strength, teaching you effective takedowns, submissions, and
+              positional control. Build confidence and skill on the mat through
+              systematic instruction in this proven self-defense system that works
+              for practitioners of all sizes and athletic abilities.
             </p>
           </div>
         </div>
@@ -114,11 +114,12 @@ export default function Classes() {
           <div className="classes-text lg:w-2/5">
             <h3>Wrestling</h3>
             <p>
-              Wrestling builds the foundation for strength, control, and
-              dominance. It&apos;s no coincidence that most UFC champions come
-              from a wrestling background. Our program focuses on technique,
-              conditioning, and mental toughness to help you develop the skills
-              that translate to success in competition and life.
+              Build the foundation that creates champions. Most UFC title holders
+              share a wrestling background for good reason, it develops unmatched
+              control, takedown ability, and physical dominance. Our wrestling
+              program sharpens your technique and mental fortitude through
+              rigorous training that carries over to all aspects of combat sports
+              and daily life.
             </p>
           </div>
           <ClassesImage
@@ -142,15 +143,15 @@ export default function Classes() {
           <div className="classes-text lg:w-2/5">
             <h3>Personal training</h3>
             <p>
-              Take your fitness and skills to the next level with one-on-one
-              coaching tailored to your goals. Whether you&apos;re looking to
-              improve strength, conditioning, technique, or overall athletic
-              performance, our coaches will create a customized plan designed
-              just for you.
+              Accelerate your progress with individualized instruction designed
+              around your specific goals. Our one-on-one sessions target exactly
+              what you need—strength gains, technical refinement, conditioning,
+              or complete athletic development. Get a fully customized training
+              plan that adapts as you improve.
             </p>
             <p>
-              We have multiple coaches available for personal training in all 
-              the above martial arts as well as personal fitness.
+              Multiple certified trainers available for private sessions in all
+              martial arts disciplines plus general fitness and conditioning.
             </p>
           </div>
         </div>

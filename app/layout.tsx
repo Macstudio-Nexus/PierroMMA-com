@@ -24,19 +24,22 @@ const pirata = Pirata_One({
 });
 
 export const metadata: Metadata = {
-  title: "Pierro MMA - Staten Island Martial Arts Training",
+  title: "Pierro MMA - BJJ Staten Island - MMA Staten Island ",
   description:
     "Professional MMA, Brazilian Jiu-Jitsu, Kickboxing, Boxing and personal fitness training in Staten Island. Expert martial arts instruction with coach Johnny Pierro. Call (646) 923-2215.",
   keywords:
-    "MMA training Staten Island, Brazilian Jiu-Jitsu, kickboxing classes, boxing training, personal fitness trainer, Staten Island brazilian jiu jitsu mma",
-  authors: [{ name: "Pierro MMA" }, { name: "Macstudio Nexus" }],
+    "Staten Island MMA, Brazilian Jiu-Jitsu staten island, kickboxing classes, boxing training, personal fitness trainer, Staten Island brazilian jiu jitsu mma",
+  authors: [{ name: "Pierro MMA" }, { name: "Craig Sampson" }],
   creator: "Pierro MMA",
-  publisher: "Macstudio Nexus",
+  publisher: "Craig Sampson",
+  alternates: {
+    canonical: "https://pierromma.com",
+  },
   robots: "index, follow",
   openGraph: {
     title: "Pierro MMA - Staten Island Martial Arts Training",
     description:
-      "Professional MMA, BJJ, Kickboxing & Boxing training. Personal fitness coaching available. Call (646) 923-2215 for expert instruction.",
+      "Professional MMA, BJJ, Kickboxing & Boxing training. Personal fitness training available. Call (646) 923-2215 for expert instruction.",
     type: "website",
     locale: "en_US",
     url: "https://pierromma.com",

@@ -30,8 +30,8 @@ export const ClassesImages: PierroImage[]  =[
     {
         image: "/wrestling-staten-island.webp",
         alt: "wrestling staten island",
-        height: 719,
-        width: 559,
+        height: 366,
+        width: 693,
     },
 
     {

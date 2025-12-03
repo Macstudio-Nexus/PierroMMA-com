@@ -37,7 +37,7 @@ export default function Nav() {
     <>
       <div className="flex flex-col w-full overflow-visible z-30">
         <div className="flex justify-between items-center w-full bg-off-black h-fit p-4">
-          <div className="w-[120px]">
+          <div className="w-[120px] z-10">
             <a
               href="https://instagram.com/pierro_mma"
               target="_blank"

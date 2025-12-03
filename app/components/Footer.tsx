@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
-
   return (
     <div className="bg-secondary/30 text-white text-center font-oswald flex flex-col items-center justify-center gap-1 px-2">
       <div className="flex flex-col md:flex-row items-center lg:justify-around w-full md:px-6 lg:px-30 py-20">

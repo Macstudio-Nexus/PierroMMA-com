@@ -11,7 +11,7 @@ export default function CoachesCard({ coach }: { coach: coach }) {
   return (
     <div className="bg-black border-2 border-primary w-[350px] lg:w-[450px] h-fit px-4 pb-4 flex flex-col items-center relative overflow-visible">
       <div
-        className={`relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] cursor-pointer overflow-visible ${
+        className={`relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] [will-change:transform] cursor-pointer overflow-visible ${
           isFlipped ? "[transform:rotateY(180deg)]" : ""
         }`}
         onClick={() => setIsFlipped(!isFlipped)}

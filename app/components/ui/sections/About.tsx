@@ -15,8 +15,8 @@ export default function About() {
             environment.
           </p>
         </div>
-        <div className="py-4 text-center animate-pulse ">
-          <h3 className="!text-primary">click each card to learn more!</h3>
+        <div className="py-4 text-center">
+          <h3 className="!text-primary animate-[fadeInOut_2s_ease-in-out_infinite]">click each card to learn more!</h3>
         </div>
         <div className="flex flex-wrap gap-4 justify-center ">
           {coaches.map((coach) => (
