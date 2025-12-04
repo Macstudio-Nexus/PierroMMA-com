@@ -29,7 +29,7 @@ export default function Classes() {
       <div className="bg-white max-w-xl lg:max-w-4xl 2xl:max-w-6xl h-fit m-3 p-3 flex flex-col items-center justify-center gap-3">
         <div className="p-2 border-2 border-off-black w-full flex flex-col items-center justify-center gap-2">
           <h2 className="whitespace-nowrap">master multiple disciplines</h2>
-          <p className="!text-black text-center !font-normal">
+          <p className="text-black! text-center font-normal!">
             We offer a full range of martial arts disciplines taught by
             experienced coaches. Whether you&apos;re a beginner looking to learn
             the fundamentals or an experienced fighter sharpening your skills,

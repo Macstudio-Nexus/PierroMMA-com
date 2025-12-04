@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
+import PrimaryButton from "./buttons/PrimaryButton";
 
 export default function Footer() {
   return (
@@ -71,6 +72,13 @@ export default function Footer() {
               />{" "}
               @pierro_mma
             </a>
+            <a
+              href="https://g.page/r/CQ5NFMZm4JRZEBE/review"
+              target="_blank"
+              className="bg-primary font-oswald text-xl px-8 py-2 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out"
+            >
+              Leave us a Review
+            </a>
           </div>
         </div>
         <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px]">
@@ -83,16 +91,16 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="w-full h-[1px] bg-primary" />
+      <div className="w-full h-px bg-primary" />
       <div className="flex items-center justify-between w-full px-3 pb-2 pt-1">
-        <p className="!text-sm">
+        <p className="text-sm!">
           &copy; {new Date().getFullYear()} Pierro MMA. All rights reserved.
         </p>
         <a
           href="https://craigsampson.com"
           target="_blank"
           rel="noopener noreferrer author nofollow"
-          className="cursor-pointer !text-sm font-light hover:text-primary hover:underline"
+          className="cursor-pointer text-sm! font-light hover:text-primary hover:underline"
         >
           Managed by CS
         </a>

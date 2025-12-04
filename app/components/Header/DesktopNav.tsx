@@ -36,7 +36,7 @@ export default function Nav() {
   return (
     <>
       <div className="flex flex-col w-full overflow-visible z-30">
-        <div className="flex justify-between items-center w-full bg-off-black h-fit p-4">
+        <div className="grid grid-cols-[0.3fr_auto_auto_0.3fr] place-items-center justify-items-center w-full bg-off-black h-fit p-4 gap-30">
           <div className="w-[120px] z-10">
             <a
               href="https://instagram.com/pierro_mma"
@@ -56,17 +56,17 @@ export default function Nav() {
           <div className="w-[315px] text-right pr-4">
             <span className="text-5xl text-white font-bangers">pierro mma</span>
           </div>
-          <div className="flex flex-col items-start pl-4">
+          <div className="flex flex-col items-start pl-4 justify-self-center">
             <p>+1 646-923-2215</p>
-            <p>3801 Victory Blvd, suite G, Staten Island, NY 10314</p>
+            <p>3801 Victory Blvd, Staten Island, NY 10314</p>
           </div>
           <div className="z-10">
             <PrimaryButton text="Contact" link="#contact" />
           </div>
         </div>
         <div className="flex items-center justify-center gap-6 w-full bg-white h-10 py-1 overflow-visible">
-          <div className="grid grid-cols-[1fr_0.5fr_1fr] w-full font-oswald text-2xl items-center">
-            <div className="flex justify-end gap-32">
+          <div className="grid grid-cols-[1fr_auto_1fr] w-full font-oswald text-2xl items-center">
+            <div className="flex justify-end gap-32 mr-8">
               <Link
                 href={desktopMenu[0].href}
                 className={
@@ -103,7 +103,7 @@ export default function Nav() {
               </Link>
             </div>
 
-            <div className="flex justify-start gap-32">
+            <div className="flex justify-start gap-32 ml-8">
               <Link
                 href={desktopMenu[2].href}
                 className={
